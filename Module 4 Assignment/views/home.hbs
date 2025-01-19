@@ -1,0 +1,51 @@
+<main>
+  {{! Welcome section }}
+  <div class="page-header">
+    <p>{{welcomeMessage}}</p>
+  </div>
+  <div class="hero-header">
+    <p>{{featuredHeader}}</p>
+  </div>
+
+  {{! Featured Movies Slider Section }}
+  <section class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        {{#each featuredMovies}}
+          <div class="slide-item">
+            <img src="{{imageUrl}}" alt="{{title}}" id="slide-{{@index}}" />
+            <div class="slide-description">
+              <h3>Overview</h3>
+              <p>{{description}}</p>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      <div class="slider-nav">
+        {{#each featuredMovies}}
+          <a href="#slide-{{@index}}"></a>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  {{! Popular Movies Section }}
+  <section class="popular-movies">
+    <h3>{{popularMoviesHeader}}</h3>
+    <div class="movie-container">
+      {{#each popularMovies}}
+        <div class="movie-card">
+          <img src="{{imageUrl}}" alt="{{title}}" />
+          <div class="slide-description">
+            <h3>Overview</h3>
+            <p>{{description}}</p>
+          </div>
+          <div class="movie-info">
+            <h3>Overview</h3>
+            <span class="rating">{{rating}}</span>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+</main>

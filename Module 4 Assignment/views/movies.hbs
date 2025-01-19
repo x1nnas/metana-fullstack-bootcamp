@@ -1,0 +1,25 @@
+<main class="movies-container">
+  <h1 class="movies-title">{{pageTitle}}</h1>
+
+  <div class="movies-grid">
+    {{#each movies}}
+      <div class="movie-card">
+        {{! Construct the image URL using TMDB's image path format }}
+        <img
+          src="https://image.tmdb.org/t/p/w500{{poster_path}}"
+          alt="{{title}}"
+          class="movie-poster"
+        />
+        <div class="movie-details">
+          <h2 class="movie-title">{{title}}</h2>
+          <p class="movie-date">Released: {{release_date}}</p>
+          <div class="movie-rating">
+            <span class="star">★</span>
+            <span>{{format_number vote_average}}</span>
+          </div>
+          <p class="movie-description">{{overview}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</main>
