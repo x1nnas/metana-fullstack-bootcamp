@@ -4,7 +4,7 @@ const path = require('path');
 const nodemon = require('nodemon');
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Handle 404
 app.use((req, res) => {
