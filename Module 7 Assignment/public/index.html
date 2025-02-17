@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porto - Tailwind Template</title>
-    <link href="../src/output.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,21 +20,35 @@
     ></script>
   </head>
 
-  <body>
-    <section>
+  <body class="bg-gray-50 px-50">
+    <section class="mx-auto max-w-screen-xl px-4">
       <div>
-        <nav>
-          <img src="assets/image/navbar-logo.png" alt="Logo" />
-
-          <button>Get my CV</button>
+        <nav
+          class="flex justify-between items-center px-4 py-2 mx-auto max-w-screen-xl"
+        >
+          <img
+            src="assets/image/navbar-logo.png"
+            alt="Logo"
+            class="w-auto h-12"
+          />
+          <button
+            type="button"
+            class="px-4 py-2 bg-white text-black rounded focus:outline-none focus:ring-2 z-10 cursor-pointer"
+          >
+            Get my CV
+          </button>
         </nav>
 
-        <div>
+        <div class="text-center">
           <div>
-            <img src="assets/image/home-img.png" alt="Image" />
+            <img
+              src="assets/image/home-img.png"
+              alt="Image"
+              class="mx-auto w-1/8 h-auto"
+            />
           </div>
 
-          <h6>Kate Wolff</h6>
+          <h6 class="mx-auto">Kate Wolff</h6>
 
           <h1>Senior Backend Developer</h1>
 
