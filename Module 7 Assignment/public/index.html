@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porto - Tailwind Template</title>
-    <link href="/styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +20,7 @@
     ></script>
   </head>
 
-  <body class="bg-gray-100 px-50">
+  <body class="bg-gray-100 px-80">
     <section class="mx-auto max-w-screen-xl px-4">
       <div>
         <nav
@@ -61,7 +61,7 @@
 
           <a
             href="#"
-            class="mt-6 bg-[#374151] w-[122px] h-[51px] inline-block text-white text-center leading-[51px] rounded-lg"
+            class="mt-12 bg-[#374151] w-[122px] h-[51px] inline-block text-white text-center leading-[51px] rounded-lg"
             >Hire me</a
           >
         </div>
@@ -69,7 +69,7 @@
     </section>
 
     <section>
-      <div class="mt-7">
+      <div class="mt-12">
         <div class="grid grid-cols-3 gap-6">
           <div class="bg-gray-50 p-6 rounded-lg">
             <div class="text-4xl mb-4">
@@ -274,12 +274,12 @@
     <section>
       <div>
         <div>
-          <h1>
+          <h1 class="text-[68px] text-[#D1D5DB] mt-12 mb-20 font-light text-center">
             Please do not measure your skills in <br />
             percentages!
           </h1>
 
-          <p>
+          <p class="text-[16px] text-center font-light mt-10 mb-10">
             In my many years of experience, I use @laravel for backend projects
             and @vuejs for <br />
             front-end projects. I’m an avid programmer, so I create designs
@@ -291,67 +291,59 @@
     </section>
 
     <section>
-      <div>
-        <h1>Experience</h1>
+      <div class="whitespace-nowrap">
+        <h1 class="text-[36px] font-light mb-8">Experience</h1>
 
-        <p>Below is a summary of the places I studied</p>
+        <p class="text-[16px] font-extralight mb-6">Below is a summary of the places I studied</p>
 
-        <div>
-          <div>
-            <h6>Company</h6>
-
+        <div class="grid grid-cols-3 text-gray-700 gap-x-140">
+          <!-- Company Column -->
+          <div class="space-y-6">
+            <h6 class="uppercase text-sm font-semibold text-gray-400 mb-4">Company</h6>
             <p>
-              Massa Fames
-              <span>/ New York</span>
+              <span class="font-medium text-gray-800">Massa Fames</span>
+              <span class="text-gray-400 font-light">/ New York</span>
             </p>
-
             <p>
-              Massa Fames
-              <span>/ New York</span>
+              <span class="font-medium text-gray-800">Massa Fames</span>
+              <span class="text-gray-400 font-light">/ New York</span>
             </p>
-
-            <p>
-              Massa Fames
-              <span>/ New York</span>
+            <p class="mb-8">
+              <span class="font-medium text-gray-800">Massa Fames</span>
+              <span class="text-gray-400 font-light">/ New York</span>
             </p>
-
             <p>
-              Massa Fames
-              <span>/ New York</span>
+              <span class="font-medium text-gray-800">Massa Fames</span>
+              <span class="text-gray-400 font-light">/ New York</span>
             </p>
-
             <p>
-              Massa Fames
-              <span>/ New York</span>
+              <span class="font-medium text-gray-800">Massa Fames</span>
+              <span class="text-gray-400 font-light">/ New York</span>
             </p>
           </div>
-
+    
+          <!-- Position Column -->
           <div>
-            <h6>Position</h6>
-
+            <h6 class="uppercase text-sm font-semibold text-gray-400 mb-4">Position</h6>
+            <div class="text-gray-400 space-y-6 font-light">
             <p>Junior Front-End Developer</p>
-
             <p>Junior Front-End Developer</p>
-
             <p>Junior Front-End Developer</p>
-
             <p>Junior Front-End Developer</p>
-
             <p>Junior Front-End Developer</p>
           </div>
-
+          </div>
+    
+          <!-- Year Column -->
           <div>
-            <h6>Year</h6>
-
+            <h6 class="uppercase text-sm font-semibold text-gray-400 mb-4">Year</h6>
+            <div class="text-gray-400 font-light space-y-6">
             <p>2016</p>
-
             <p>2016</p>
-
             <p>2016</p>
-
             <p>2016</p>
-
             <p>2016</p>
+          </div>
           </div>
         </div>
       </div>
@@ -359,11 +351,11 @@
 
     <section>
       <div>
-        <h1>Brands</h1>
+        <h1 class="text-[36px] font-light mb-8 mt-8">Brands</h1>
 
-        <p>Below is a summary of the places I studied</p>
+        <p class="text-[16px] font-extralight mb-6">Below is a summary of the places I studied</p>
 
-        <div>
+        <div class="grid grid-cols-3 mb-10 mt-10">
           <img src="assets/image/brand-1.png" alt="Image" />
 
           <img src="assets/image/brand-2.png" alt="Image" />
@@ -381,86 +373,86 @@
 
     <section>
       <div>
-        <h1>Testimonial</h1>
+        <h1 class="text-[36px] font-extralight mb-8 mt-8">Testimonial</h1>
 
-        <p>Below is a summary of the places I studied</p>
+        <p class="text-[16px] font-extralight mb-6">Below is a summary of the places I studied</p>
 
-        <div>
-          <div>
-            <p>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <p class="text-[16px] text-[#6B7280] font-extralight">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <h6>
+            <h6 class="text-[16px] text-[#6B7280] font-semibold mt-4">
               Stephan Clark
-              <span>- CEO at EarlyBird</span>
+              <span class="font-extralight">- CEO at EarlyBird</span>
             </h6>
           </div>
 
-          <div>
-            <p>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <p class="text-[16px] text-[#6B7280] font-extralight">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <h6>
+            <h6 class="text-[16px] text-[#6B7280] font-semibold mt-4">
               Stephan Clark
-              <span>- CEO at EarlyBird</span>
+              <span class="font-extralight">- CEO at EarlyBird</span>
             </h6>
           </div>
 
-          <div>
-            <p>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <p class="text-[16px] text-[#6B7280] font-extralight">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <h6>
+            <h6 class="text-[16px] text-[#6B7280] font-semibold mt-4">
               Stephan Clark
-              <span>- CEO at EarlyBird</span>
+              <span class="font-extralight">- CEO at EarlyBird</span>
             </h6>
           </div>
 
-          <div>
-            <p>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <p class="text-[16px] text-[#6B7280] font-extralight">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <h6>
+            <h6 class="text-[16px] text-[#6B7280] font-semibold mt-4">
               Stephan Clark
-              <span>- CEO at EarlyBird</span>
+              <span class="font-extralight">- CEO at EarlyBird</span>
             </h6>
           </div>
 
-          <div>
-            <p>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <p class="text-[16px] text-[#6B7280] font-extralight">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <h6>
+            <h6 class="text-[16px] text-[#6B7280] font-semibold mt-4">
               Stephan Clark
-              <span>- CEO at EarlyBird</span>
+              <span class="font-extralight">- CEO at EarlyBird</span>
             </h6>
           </div>
 
-          <div>
-            <p>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <p class="text-[16px] text-[#6B7280] font-extralight">
               Lorem ipsum dolor sit amet, consectetur <br />
               adipiscing elit, sed do eiusmod tempor <br />
               incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <h6>
+            <h6 class="text-[16px] text-[#6B7280] font-semibold mt-4">
               Stephan Clark
-              <span>- CEO at EarlyBird</span>
+              <span class="font-extralight">- CEO at EarlyBird</span>
             </h6>
           </div>
         </div>
@@ -470,15 +462,15 @@
     <footer>
       <div>
         <div>
-          <h1>Testimonial</h1>
+          <h1 class="text-[48px] text-center font-extralight mt-8">Testimonial</h1>
 
-          <p>
+          <p class="text-[16px] font-extralight mb-6 mt-8 text-center">
             I’m not currently taking on new client work but feel free to contact
             me for any <br />
             other inquiries.
           </p>
 
-          <div>
+          <div class="flex flex-auto items-center justify-center space-x-8 mt-12 mb-12">
             <a href="#">
               <i data-feather="twitter"></i>
             </a>
