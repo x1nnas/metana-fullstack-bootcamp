@@ -7,6 +7,7 @@ import { fileURLToPath } from "url";
 
 import blogsRouter from "./routes/blogsRouter.js";
 import userRouter from "./routes/userRouter.js";
+import authRouter from "./routes/authRouter.js";
 
 dotenv.config(); // Load environment variables from .env file
 
@@ -19,6 +20,7 @@ app.use(express.json()); // Parse incoming JSON requests
 // Routes
 app.use("/api/blogs", blogsRouter); // Route for blog-related operations
 app.use("/api/users", userRouter); // Route for user-related operations
+app.use("/api/auth", authRouter); // Route for authentication-related operations
 
 // Root route to check server status
 app.get("/", (req, res) => {
