@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+body {
+    margin: 0; /* Add to prevent default browser margins */
+}
+
+nav a:hover {
+    transition: color 0.3s ease;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
