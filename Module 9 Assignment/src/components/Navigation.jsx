@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // Navigation component for rendering the site's navigation menu
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to track mobile menu visibility
+  const isLoggedIn = false; // Placeholder for user authentication status
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev); // Toggle mobile menu visibility
 
@@ -22,6 +23,22 @@ const Navigation = () => {
             {item}
           </Link>
         ))}
+        {!isLoggedIn && (
+          <>
+            <Link
+              to="/login"
+              className="relative text-white hover:text-yellow-600 transition-colors duration-300"
+            >
+              Login
+            </Link>
+            <Link
+              to="/create-account"
+              className="relative text-white hover:text-yellow-600 transition-colors duration-300"
+            >
+              Register
+            </Link>
+          </>
+        )}
       </div>
 
       {/* Mobile Menu Button */}

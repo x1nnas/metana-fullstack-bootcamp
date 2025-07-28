@@ -20,6 +20,9 @@ export async function registerUser(req, res) {
       .json({ message: "Password must be at least 6 characters long" });
   }
 
+  // Set default role here
+  const role = "user";
+
   try {
     // Check if email already exists
     const existingUser = await db.query(

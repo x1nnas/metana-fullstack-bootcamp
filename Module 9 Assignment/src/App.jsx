@@ -11,6 +11,8 @@ import Blogs from "./pages/Blogs";
 import BlogPosts from "./pages/BlogPosts";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogPosts />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/create-account" element={<Register />} />
           <Route path="/admin-dash" element={<AdminDashboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
